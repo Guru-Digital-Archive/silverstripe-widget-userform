@@ -1,0 +1,29 @@
+{
+    "name": "gdmedia/silverstripe-widget-userform",
+    "description": "Simple Silver Stripe module to display userforms as widgets on pages",
+    "type": "silverstripe-module",
+    "homepage": "https://github.com/guru-digital/silverstripe-widget-userform",
+    "keywords": ["silverstripe", "widget", "form", "userform"],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Corey Sewell - Guru Digital Media",
+            "email": "corey@gdmedia.tv"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/guru-digital/silverstripe-widget-userform/issues"
+    },
+    "require": {
+        "silverstripe/cms": ">=3.0.1,<3.2",
+        "composer/installers": "*",
+        "silverstripe/widgets": "*",
+        "silverstripe/userforms": "*"
+    },
+    "extra": {
+        "installer-name": "silverstripe-widget-userform"
+    },
+    "suggest": {
+        "zirak/widget-pages-extension": "Widget Gridfields to the extended pages or DataObjects."
+    }
+}
