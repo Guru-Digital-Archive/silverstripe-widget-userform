@@ -1,6 +1,7 @@
 <?php
 
-class UserFormWidget extends Widget {
+class UserFormWidget extends Widget
+{
 
     private static $db      = array(
     );
@@ -23,7 +24,8 @@ class UserFormWidget extends Widget {
      */
     private static $description = "Add user defined forms to your pages.";
 
-    public function getCMSFields() {
+    public function getCMSFields()
+    {
         $fields = parent::getCMSFields();
 
         $fields->addFieldToTab("Root.Main", new TextField('WidgetLabel', 'Widget Label'), "Enabled");
@@ -33,11 +35,13 @@ class UserFormWidget extends Widget {
         return $fields;
     }
 
-    public function Title() {
+    public function Title()
+    {
         return $this->WidgetLabel;
     }
 
-    public function Form() {
+    public function Form()
+    {
         $form = false;
         if ($this->FormPage()) {
             $result = new UserDefinedForm_Controller($this->FormPage());
@@ -46,5 +50,4 @@ class UserFormWidget extends Widget {
         }
         return $form;
     }
-
 }
